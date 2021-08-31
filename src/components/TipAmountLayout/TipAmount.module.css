@@ -4,13 +4,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--blue);
-  margin: auto 1rem;
   padding: 0.5rem;
   border-radius: 5px;
-  height: 90%;
-  width: 45%;
   color: white;
-  position: relative;
+  width: 90%;
+  height: 40%;
 }
 
 .PricingContainer {
@@ -35,4 +33,12 @@
 
 .Reset:hover {
   background-color: aquamarine;
+}
+
+@media (min-width: 560px) {
+  .TipAmountContainer {
+    margin: auto 1rem;
+    height: 90%;
+    width: 45%;
+  }
 }

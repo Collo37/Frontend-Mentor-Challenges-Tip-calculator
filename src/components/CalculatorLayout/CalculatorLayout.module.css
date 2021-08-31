@@ -1,18 +1,17 @@
 .CalculatorLayout {
-  margin: auto 1rem;
-  padding: 0.5rem;
-  text-align: left;
-  width: 45%;
-  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: left;
 }
 
 .InputContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 
 .Input {
@@ -28,4 +27,16 @@
   display: block;
   margin: 1rem auto;
   padding: 0.5rem;
+}
+
+@media (min-width: 560px) {
+  .CalculatorLayout {
+    margin: auto 1rem;
+    padding: 0.5rem;
+    width: 45%;
+    height: 80%;
+  }
+  .InputContainer {
+    width: 100%;
+  }
 }
