@@ -5,7 +5,7 @@ const DisplayBlock = (props) => {
   return (
     <div className={classes.Block}>
       <p>{props.title}</p>
-      <p>{props.amount}</p>
+      <p>{props.amount ? `$: ${props.amount.toFixed(2)}` : "$: 0.00"}</p>
     </div>
   );
 };
